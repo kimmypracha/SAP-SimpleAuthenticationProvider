@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("POSTGRES_URI")
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://ffnixadiumodyl:efba2147a4475be1b5c63ecfa0ffd6d7fd6dff2eaacef6e715bb8796886d8d60@ec2-54-157-79-121.compute-1.amazonaws.com:5432/d7umloa9ks5j78"
 db = SQLAlchemy(app)
 
 class UserID(db.Model):
